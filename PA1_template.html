@@ -9,6 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Author: rrwiren" />
 
 
 <title>Reproducible Research: Peer Assessment 1</title>
@@ -118,12 +119,18 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Reproducible Research: Peer Assessment 1</h1>
+<h4 class="author"><em>Author: rrwiren</em></h4>
+<h4 class="date"><em>Current date: 25 March, 2018</em></h4>
 
 </div>
 
 
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
+<pre class="r"><code>if(!file.exists('activity.csv')){
+    unzip('activity.zip')
+}
+activity &lt;- read.csv('activity.csv')</code></pre>
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>
@@ -136,6 +143,9 @@ $(document).ready(function () {
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
+</div>
+<div id="additional-information" class="section level2">
+<h2>Additional information</h2>
 </div>
 
 

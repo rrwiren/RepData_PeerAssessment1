@@ -1,13 +1,41 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
+author: "Author: rrwiren"
+date: "Current date: `r format(Sys.time(), '%d %B, %Y')`"
 output: 
   html_document:
     keep_md: true
 ---
 
+---
+## Loading libraries and some housekeeping
+---
+```{r, echo=FALSE}
+        library(ggplot2)
+        setwd("~/GitHub/RepData_PeerAssessment1")
+```
 
 ## Loading and preprocessing the data
 
+```{r, results='markup', warning=TRUE, message=TRUE}
+if(!file.exists('activity.csv')){
+    unzip('activity.zip')
+}
+activity <- read.csv('activity.csv')
+```
+
+---
+### Having a quick look at the data
+---
+```{r, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
+str(activity)
+```
+```{r, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
+head(activity)
+```
+```{r, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
+summary(activity)
+```
 
 
 ## What is mean total number of steps taken per day?
@@ -23,3 +51,8 @@ output:
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
+
+
+
+
+## Additional information
