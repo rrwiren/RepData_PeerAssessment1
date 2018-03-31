@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: 'Reproducible Research: Peer Assessment 1'
 author: 'Author: rrwiren'
@@ -43,7 +42,7 @@ activity <- read.csv('activity.csv')
 
 ```r
 totalStepsDay <- tapply(activity$steps, activity$date, sum, na.rm=T)
-qplot(totalStepsDay, xlab='Total steps per day (imputed)', ylab='Count with binwidth = 1000', binwidth=1000)
+qplot(totalStepsDay, xlab='Total steps per day', ylab='Count with binwidth = 1000', binwidth=1000)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
@@ -246,7 +245,7 @@ ggplot(averagedActivity.i, aes(interval, steps)) +
 ---
 title: 'Reproducible Research: Peer Assessment 1'
 author: 'Author: rrwiren'
-date: "Current date ;) 30 March, 2018"
+date: "Current date ;) 31 March, 2018"
 output:
   html_document:
     keep_md: yes
@@ -290,7 +289,7 @@ totalStepsDay <- tapply(activity$steps, activity$date, sum, na.rm=T)
 qplot(totalStepsDay, xlab='Total steps per day (imputed)', ylab='Count with binwidth = 1000', binwidth=1000)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-21-1.png)<!-- -->
 
 #### 2 - Calculate and report the mean and median total number of steps taken per day
 
@@ -338,7 +337,7 @@ ggplot(data=totalAvgSteps, aes(x=interval, y=meanSteps)) +
     ylab("Average number of steps taken across all days") 
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-25-1.png)<!-- -->
 
 
 ```r
@@ -412,7 +411,7 @@ totalStepsDay.i <- tapply(activity.i$steps, activity.i$date, sum)
 qplot(totalStepsDay.i, xlab='Total steps per day (imputed)', ylab='Count with binwith = 1000', binwidth=1000)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-30-1.png)<!-- -->
 
 
 ```r
@@ -482,8 +481,6 @@ ggplot(averagedActivity.i, aes(interval, steps)) +
     ylab("Avarage number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-18-1.png)<!-- -->
-
+![](PA1_template_files/figure-html/unnamed-chunk-36-1.png)<!-- -->
 
 ##### From comparing the two above charts we can see that activity starts earlier in the weekdays and we can also note that there are more overall activity in the weekends. The grey dotted horisontal line highlights 50 steps per interval.
->>>>>>> 714ad1a1e55ee6fc92813ecd6743c81838485381

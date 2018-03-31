@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: 'Reproducible Research: Peer Assessment 1'
 author: 'Author: rrwiren'
@@ -316,6 +315,4 @@ ggplot(averagedActivity.i, aes(interval, steps)) +
     ylab("Avarage number of steps")
 ```
 
-
 ##### From comparing the two above charts we can see that activity starts earlier in the weekdays and we can also note that there are more overall activity in the weekends. The grey dotted horisontal line highlights 50 steps per interval.
->>>>>>> 714ad1a1e55ee6fc92813ecd6743c81838485381
